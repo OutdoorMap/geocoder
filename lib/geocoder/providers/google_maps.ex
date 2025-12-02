@@ -11,7 +11,6 @@ defmodule Geocoder.Providers.GoogleMaps do
   @endpoint "https://maps.googleapis.com/"
   @components [
     "postal_city",
-    "locality",
     "administrative_area_level_1",
     "administrative_area_level_2",
     "country",
@@ -25,7 +24,6 @@ defmodule Geocoder.Providers.GoogleMaps do
     "route" => :street,
     "street_address" => :street,
     "postal_city" => :city,
-    "locality" => :city,
     "administrative_area_level_1" => :state,
     "administrative_area_level_2" => :county,
     "postal_code" => :postal_code,
