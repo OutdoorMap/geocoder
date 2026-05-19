@@ -11,6 +11,8 @@ defmodule Geocoder.Providers.GoogleMaps do
   @endpoint "https://maps.googleapis.com/"
   @components [
     "postal_city",
+    "postal_town",
+    "locality",
     "administrative_area_level_1",
     "administrative_area_level_2",
     "country",
@@ -24,6 +26,8 @@ defmodule Geocoder.Providers.GoogleMaps do
     "route" => :street,
     "street_address" => :street,
     "postal_city" => :city,
+    "postal_town" => :city,
+    "locality" => :city,
     "administrative_area_level_1" => :state,
     "administrative_area_level_2" => :county,
     "postal_code" => :postal_code,
@@ -41,7 +45,9 @@ defmodule Geocoder.Providers.GoogleMaps do
 
   def reverse_geocode(payload_opts, opts \\ []) do
     request("maps/api/geocode/json", extract_payload_opts(payload_opts), opts)
+    #|> IO.inspect()
     |> fmap(&parse_reverse_geocode/1)
+    #|> IO.inspect()
   end
 
   def reverse_geocode_list(payload_opts, opts \\ []) do

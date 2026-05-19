@@ -299,6 +299,315 @@ defmodule Geocoder.Support.Helpers do
     }
   end
 
+  def handen_googlemap_payload do
+    %{
+      "plus_code" => %{
+        "compound_code" => "54FV+446 Haninge, Sweden",
+        "global_code" => "9FFW54FV+446"
+      },
+      "results" => [
+        %{
+          "address_components" => [
+            %{"long_name" => "1", "short_name" => "1", "types" => ["street_number"]},
+            %{
+              "long_name" => "Parkvägen",
+              "short_name" => "Parkvägen",
+              "types" => ["route"]
+            },
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholms län",
+              "short_name" => "Stockholms län",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]},
+            %{"long_name" => "136 46", "short_name" => "136 46", "types" => ["postal_code"]}
+          ],
+          "formatted_address" => "Parkvägen 1, 136 46 Handen, Sweden",
+          "geometry" => %{
+            "location" => %{"lat" => 59.17268539999999, "lng" => 18.1425823},
+            "location_type" => "ROOFTOP",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.1740343802915, "lng" => 18.1439312802915},
+              "southwest" => %{"lat" => 59.17133641970849, "lng" => 18.1412333197085}
+            }
+          },
+          "navigation_points" => [
+            %{"location" => %{"latitude" => 59.1731324, "longitude" => 18.1427883}},
+            %{"location" => %{"latitude" => 59.1723731, "longitude" => 18.1427045}}
+          ],
+          "place_id" => "ChIJ9y1Zf397X0YR5l7GFXTMXqM",
+          "plus_code" => %{
+            "compound_code" => "54FV+32 Haninge, Sweden",
+            "global_code" => "9FFW54FV+32"
+          },
+          "types" => ["establishment", "parking", "point_of_interest"]
+        },
+        %{
+          "address_components" => [
+            %{"long_name" => "8", "short_name" => "8", "types" => ["street_number"]},
+            %{
+              "long_name" => "Dalarövägen",
+              "short_name" => "Dalarövägen",
+              "types" => ["route"]
+            },
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholms län",
+              "short_name" => "Stockholms län",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]},
+            %{"long_name" => "136 46", "short_name" => "136 46", "types" => ["postal_code"]}
+          ],
+          "formatted_address" => "Dalarövägen 8, 136 46 Handen, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 59.17310639999999, "lng" => 18.1436137},
+              "southwest" => %{"lat" => 59.17284799999999, "lng" => 18.1429279}
+            },
+            "location" => %{"lat" => 59.17297259999999, "lng" => 18.1432542},
+            "location_type" => "ROOFTOP",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.1743261802915, "lng" => 18.1446197802915},
+              "southwest" => %{"lat" => 59.17162821970849, "lng" => 18.1419218197085}
+            }
+          },
+          "navigation_points" => [
+            %{"location" => %{"latitude" => 59.1728755, "longitude" => 18.1432847}}
+          ],
+          "place_id" => "ChIJ8bs9KoB7X0YR-iCtDbQ3SiI",
+          "types" => ["premise", "street_address"]
+        },
+        %{
+          "address_components" => [
+            %{"long_name" => "1", "short_name" => "1", "types" => ["street_number"]},
+            %{
+              "long_name" => "Parkvägen",
+              "short_name" => "Parkvägen",
+              "types" => ["route"]
+            },
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholms län",
+              "short_name" => "Stockholms län",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]},
+            %{"long_name" => "136 46", "short_name" => "136 46", "types" => ["postal_code"]}
+          ],
+          "formatted_address" => "Parkvägen 1, 136 46 Handen, Sweden",
+          "geometry" => %{
+            "location" => %{"lat" => 59.1725134, "lng" => 18.1430582},
+            "location_type" => "ROOFTOP",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.1738623802915, "lng" => 18.1444071802915},
+              "southwest" => %{"lat" => 59.1711644197085, "lng" => 18.1417092197085}
+            }
+          },
+          "navigation_points" => [
+            %{"location" => %{"latitude" => 59.1723785, "longitude" => 18.1431971}}
+          ],
+          "place_id" => "ChIJFTPwg397X0YReTfl6tcRXRI",
+          "types" => ["street_address", "subpremise"]
+        },
+        %{
+          "address_components" => [
+            %{"long_name" => "54FV+44", "short_name" => "54FV+44", "types" => ["plus_code"]},
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholm County",
+              "short_name" => "Stockholm County",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]},
+            %{"long_name" => "136 40", "short_name" => "136 40", "types" => ["postal_code"]}
+          ],
+          "formatted_address" => "54FV+44 Haninge, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 59.172875, "lng" => 18.142875},
+              "southwest" => %{"lat" => 59.17275000000001, "lng" => 18.14275}
+            },
+            "location" => %{"lat" => 59.1727882, "lng" => 18.1427788},
+            "location_type" => "GEOMETRIC_CENTER",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.1741614802915, "lng" => 18.1441614802915},
+              "southwest" => %{"lat" => 59.17146351970849, "lng" => 18.1414635197085}
+            }
+          },
+          "place_id" => "GhIJPhF67B2WTUAR54_EJo0kMkA",
+          "plus_code" => %{
+            "compound_code" => "54FV+44 Haninge, Sweden",
+            "global_code" => "9FFW54FV+44"
+          },
+          "types" => ["plus_code"]
+        },
+        %{
+          "address_components" => [
+            %{
+              "long_name" => "Garagevägen",
+              "short_name" => "Garagevägen",
+              "types" => ["route"]
+            },
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholms län",
+              "short_name" => "Stockholms län",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]},
+            %{"long_name" => "136 46", "short_name" => "136 46", "types" => ["postal_code"]}
+          ],
+          "formatted_address" => "Garagevägen, 136 46 Handen, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 59.1733643, "lng" => 18.1449673},
+              "southwest" => %{"lat" => 59.17308449999999, "lng" => 18.142801}
+            },
+            "location" => %{"lat" => 59.1732381, "lng" => 18.143884},
+            "location_type" => "GEOMETRIC_CENTER",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.17457338029151, "lng" => 18.1452331302915},
+              "southwest" => %{"lat" => 59.17187541970849, "lng" => 18.14253516970849}
+            }
+          },
+          "place_id" => "ChIJlUlO04F7X0YRHhK96_K6KK0",
+          "types" => ["route"]
+        },
+        %{
+          "address_components" => [
+            %{"long_name" => "136 46", "short_name" => "136 46", "types" => ["postal_code"]},
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholms län",
+              "short_name" => "Stockholms län",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]}
+          ],
+          "formatted_address" => "136 46 Handen, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 59.1756419, "lng" => 18.1587746},
+              "southwest" => %{"lat" => 59.1640883, "lng" => 18.1375155}
+            },
+            "location" => %{"lat" => 59.1737942, "lng" => 18.1421502},
+            "location_type" => "APPROXIMATE",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.1756419, "lng" => 18.1587746},
+              "southwest" => %{"lat" => 59.1640883, "lng" => 18.1375155}
+            }
+          },
+          "place_id" => "ChIJ_yV8yvmG9UYRApiQGPP-ABM",
+          "types" => ["postal_code"]
+        },
+        %{
+          "address_components" => [
+            %{"long_name" => "Handen", "short_name" => "Handen", "types" => ["postal_town"]},
+            %{
+              "long_name" => "Stockholms län",
+              "short_name" => "Stockholms län",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]}
+          ],
+          "formatted_address" => "Handen, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 59.1900201, "lng" => 18.1677821},
+              "southwest" => %{"lat" => 59.15016480000001, "lng" => 18.101025}
+            },
+            "location" => %{"lat" => 59.16893460000001, "lng" => 18.1500748},
+            "location_type" => "APPROXIMATE",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.1900201, "lng" => 18.1677821},
+              "southwest" => %{"lat" => 59.15016480000001, "lng" => 18.101025}
+            }
+          },
+          "place_id" => "ChIJVexs0Qp7X0YRokAWWiRrzUA",
+          "types" => ["postal_town"]
+        },
+        %{
+          "address_components" => [
+            %{
+              "long_name" => "Haninge Municipality",
+              "short_name" => "Haninge Municipality",
+              "types" => ["administrative_area_level_2", "political"]
+            },
+            %{
+              "long_name" => "Stockholm County",
+              "short_name" => "Stockholm County",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]}
+          ],
+          "formatted_address" => "Haninge Municipality, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 59.219712, "lng" => 18.9411878},
+              "southwest" => %{"lat" => 58.6184374, "lng" => 17.9149522}
+            },
+            "location" => %{"lat" => 59.000615, "lng" => 18.3469875},
+            "location_type" => "APPROXIMATE",
+            "viewport" => %{
+              "northeast" => %{"lat" => 59.219712, "lng" => 18.9411878},
+              "southwest" => %{"lat" => 58.6184374, "lng" => 17.9149522}
+            }
+          },
+          "place_id" => "ChIJeREN1DSP9UYR_iSfh93-8LI",
+          "types" => ["administrative_area_level_2", "political"]
+        },
+        %{
+          "address_components" => [
+            %{
+              "long_name" => "Stockholm County",
+              "short_name" => "Stockholm County",
+              "types" => ["administrative_area_level_1", "political"]
+            },
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]}
+          ],
+          "formatted_address" => "Stockholm County, Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 60.30071210000001, "lng" => 19.7424},
+              "southwest" => %{"lat" => 58.4888899, "lng" => 17.2449257}
+            },
+            "location" => %{"lat" => 59.4069048, "lng" => 18.8230665},
+            "location_type" => "APPROXIMATE",
+            "viewport" => %{
+              "northeast" => %{"lat" => 60.30071210000001, "lng" => 19.7424},
+              "southwest" => %{"lat" => 58.4888899, "lng" => 17.2449257}
+            }
+          },
+          "place_id" => "ChIJPauYNIoH2EUR-vzAobVCa7M",
+          "types" => ["administrative_area_level_1", "political"]
+        },
+        %{
+          "address_components" => [
+            %{"long_name" => "Sweden", "short_name" => "SE", "types" => ["country", "political"]}
+          ],
+          "formatted_address" => "Sweden",
+          "geometry" => %{
+            "bounds" => %{
+              "northeast" => %{"lat" => 69.0599735, "lng" => 24.1776852},
+              "southwest" => %{"lat" => 55.0059799, "lng" => 10.5798}
+            },
+            "location" => %{"lat" => 60.12816100000001, "lng" => 18.643501},
+            "location_type" => "APPROXIMATE",
+            "viewport" => %{
+              "northeast" => %{"lat" => 69.0599735, "lng" => 24.1776852},
+              "southwest" => %{"lat" => 55.0059799, "lng" => 10.5798}
+            }
+          },
+          "place_id" => "ChIJ8fA1bTmyXEYRYm-tjaLruCI",
+          "types" => ["country", "political"]
+        }
+      ],
+      "status" => "OK"
+    }
+  end
+
   def belgium_opencagedata_payload do
     %{
       "documentation" => "https://opencagedata.com/api",
